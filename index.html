@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>All-in-One Webpage</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 1rem 0;
+    }
+
+    header h1 {
+      float: left;
+      margin-left: 1rem;
+    }
+
+    header nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: flex-end;
+      margin-right: 1rem;
+    }
+
+    header nav ul li {
+      margin-left: 20px;
+    }
+
+    header nav ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    header::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .hero {
+      background: url('https://picsum.photos/1600/500') no-repeat center center/cover;
+      color: white;
+      padding: 100px 0;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin: 20px 0;
+    }
+
+    .hero .btn {
+      display: inline-block;
+      background: #ff5722;
+      color: white;
+      padding: 10px 25px;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+
+    .content {
+      padding: 40px 0;
+      background: white;
+      text-align: center;
+    }
+
+    .content h3 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .content p {
+      font-size: 1rem;
+      color: #666;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    footer {
+      background-color: #222;
+      color: #aaa;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      header h1, header nav ul {
+        float: none;
+        text-align: center;
+      }
+
+      header nav ul {
+        flex-direction: column;
+        margin: 10px 0 0 0;
+      }
+
+      .hero h2 {
+        font-size: 2rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>My Website</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Welcome to My Website</h2>
+      <p>This is a simple, responsive webpage using HTML and CSS in one file.</p>
+      <a href="#" class="btn">Get Started</a>
+    </div>
+  </section>
+
+  <section class="content">
+    <div class="container">
+      <h3>About Us</h3>
+      <p>We build responsive and beautiful websites with modern technologies. This example demonstrates how to structure a full web page using just HTML and CSS, fully contained in a single file. Feel free to customize this for your own projects!</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 My Website. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
+
